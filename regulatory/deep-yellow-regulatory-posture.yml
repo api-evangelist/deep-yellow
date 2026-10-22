@@ -1,0 +1,96 @@
+generated: '2026-10-21'
+method: searched
+source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+discovered_via: https://deepyellow.com.au/about-us/corporate-governance/
+note: >-
+  Deep Yellow Limited is an ASX-listed uranium exploration/development company, not an API provider. Its only
+  privacy/legal text found is the Privacy Policy PDF (May 2026) linked from the Corporate Governance page, plus a
+  GDPR Cookie Compliance plugin banner on the homepage. The policy is framed under the Australian Privacy Act and
+  Australian Privacy Principles (APPs). No terms of service, trust centre, subprocessor list, DPA, AI statement,
+  accessibility statement or transparency report was found on the site.
+signals:
+  data_subject_request:
+    url: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+    section: '9. Accessing and Correcting your Personal Information'
+    channel: info@deepyellow.com.au
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "We will, on request, provide you with access to the information we hold about you, including for the
+        purpose of correcting or updating that information, unless there is an exception to such disclosure
+        which applies under the APPs."
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "If you require access to your personal information, please contact the Company at info@deepyellow.com.au.
+        Before we provide you with access to your personal information, we will require some proof of identity."
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "We endeavour to respond to complaints within a reasonable period (usually 30 days). If you are not
+        satisfied with our response, you may make a complaint to the Office of the Australian Information
+        Commissioner by phoning 1300 363 992 or by email at enquiries@oaic.gov.au."
+    note: >-
+      An email-based access and correction process under the APPs, with identity verification, a possible fee for
+      substantial requests, and OAIC escalation. Only access and correction are named; deletion and portability
+      are not offered as rights. The ~30-day figure applies to complaints, not to access requests. No form or API.
+  subprocessors:
+    url: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+    section: '8. Disclosure of Your Personal Information'
+    list_published: false
+    evidence:
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "(b) our service providers and professional advisors including IT service providers, auditors, legal
+        advisors, mail houses and to the share registrar;"
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "We take steps to ensure that our service providers are obliged to protect the privacy and security of
+        personal information and use it only for the purpose for which it is disclosed."
+    note: >-
+      Categories of recipients only (related companies, service providers, financial institutions, government
+      agencies); no named subprocessor list is published.
+  data_residency:
+    url: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+    section: '8. Disclosure of Your Personal Information'
+    evidence:
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "We may disclose personal information we have collected to third parties located overseas in circumstances
+        permitted by the Australian Privacy Principles (APP), including in Namibia, where the Company’s operations
+        are located."
+    note: >-
+      A cross-border disclosure statement naming Namibia; it is not a residency commitment — no storage location
+      or in-region guarantee is given.
+  data_retention:
+    url: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+    section: '4. What Personal Information Do We Collect?'
+    evidence:
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "In such instances, we will determine whether we would have been entitled to collect such information from
+        you, and to the extent we would not have been entitled to do so, we will destroy or de-identify such
+        information as soon as reasonably practical."
+    - source: https://deepyellow.com.au/wp-content/uploads/PrivacyPolicy18May26.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        "We do not knowingly collect, hold or use such information. If we become aware that such information has
+        inadvertently been inadvertently collected or is inadvertently held by us, we will destroy it."
+    note: >-
+      Destruction/de-identification applies only to unsolicited or sensitive information collected inadvertently.
+      No general retention period or schedule is stated. (The duplicated "inadvertently" is in the original.)

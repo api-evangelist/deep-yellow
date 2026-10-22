@@ -1,23 +1,91 @@
 aid: deep-yellow
+
 name: Deep Yellow
-description: 'Deep Yellow is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Deep Yellow Limited is an Australian uranium company listed on the ASX (DYL), with secondary listings on the
+  Namibian Stock Exchange (NSX: DYL) and OTC Markets (DYLLF), describing its aim as becoming a tier-one, low-cost uranium
+  producer. Its portfolio includes the Tumas and Omahola projects and the Nova and Yellow Dune joint ventures in Namibia,
+  plus the Mulga Rock project in Western Australia and the Alligator River project and Cooper Creek JV in the Northern Territory.
+  Its site (deepyellow.com.au) is a corporate and investor-relations site; no public developer portal, API documentation or
+  API product was found on it. The company was surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/deep-yellow/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Uranium
+- Energy
+- Australia
+- Namibia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://deepyellow.com.au/wp-content/uploads/DeepYellowLimitedLogo.png
+
 common:
+- type: Hosts
+  url: hosts/deep-yellow-hosts.yml
+- type: DomainSecurity
+  url: security/deep-yellow-domain-security.yml
 - type: Website
   url: https://deepyellow.com.au/
+- type: AboutUs
+  url: https://deepyellow.com.au/about-us/
+- type: Support
+  url: https://deepyellow.com.au/contact-us/
+- type: InvestorRelations
+  url: https://deepyellow.com.au/investor-centre/
+- type: News
+  url: https://deepyellow.com.au/investor-centre/asx-announcements/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/deep-yellow-limited/
+- type: Twitter
+  url: https://twitter.com/DeepYellowLtd
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Homepage title "Deep Yellow Limited - Becoming a tier-one, low-cost uranium producer" names the company; corporate/IR
+    site only, no developer, docs, pricing, terms or privacy pages linked.
+  evidence:
+  - url: https://deepyellow.com.au/
+    status: 200
+  - url: https://deepyellow.com.au/about-us/
+    status: 200
+  - url: https://deepyellow.com.au/contact-us/
+    status: 200
+  - url: https://deepyellow.com.au/investor-centre/asx-announcements/
+    status: 200
+  - url: https://www.linkedin.com/company/deep-yellow-limited/
+    status: 200
+  - url: https://twitter.com/DeepYellowLtd
+    status: 200
+  - url: https://deepyellow.com.au/wp-content/uploads/DeepYellowLimitedLogo.png
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

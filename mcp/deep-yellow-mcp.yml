@@ -1,0 +1,22 @@
+type: MCPServer
+name: Deep Yellow MCP server
+generated: '2026-10-21'
+method: none
+status: none
+description: >-
+  No MCP server exists for Deep Yellow Limited (ASX: DYL), an Australian uranium company whose site
+  deepyellow.com.au is a corporate and investor-relations site. No official hosted or local MCP server is
+  published, and no OpenAPI contract exists to derive a candidate tool list from.
+checked:
+- url: https://deepyellow.com.au/.well-known/mcp.json
+  status: 404
+- url: https://deepyellow.com.au/.well-known/mcp/server-card.json
+  status: 404
+- url: https://deepyellow.com.au/llms.txt
+  status: 404
+- note: pre-flight contract discovery (2026-10-21) on deepyellow.com.au found no OpenAPI, AsyncAPI, GraphQL or MCP surface
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed

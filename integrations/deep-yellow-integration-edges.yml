@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/deep-yellow/integrations
+- https://n8n.io/integrations/deep-yellow/
+- https://composio.dev/toolkits/deep-yellow
+- https://monid.ai/tools/deep-yellow
+checked:
+- https://deepyellow.com.au/
+- https://zapier.com/apps/deep-yellow/integrations
+- https://composio.dev/toolkits/deep-yellow
+- https://monid.ai/tools/deep-yellow
+- https://n8n.io/integrations/deep-yellow/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Deep Yellow Limited is an ASX-listed uranium explorer/developer with a corporate and investor-relations website
+  only. No app marketplace listing, integrations page or API contract was found. The homepage logo row (IAEA, MCA,
+  NUA, WNA) shows industry bodies/associations, not software integration partners, so no edges are recorded.
